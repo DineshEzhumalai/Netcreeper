@@ -8,8 +8,6 @@ module com.example.netcreeper {
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
-    requires com.almasb.fxgl.all;
 
     opens com.example.netcreeper to javafx.fxml;
     exports com.example.netcreeper;
