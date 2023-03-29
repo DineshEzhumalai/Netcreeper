@@ -1,8 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.gluonhq.charm.glisten.control.ProgressBar?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="splash-screen" stylesheets="@Design/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.netcreeper.Splashscreen">
-
+<AnchorPane prefHeight="386.0" prefWidth="600.0" styleClass="splash-screen" stylesheets="@Design/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.netcreeper.Splashscreen">
+   <children>
+      <Text fill="#fdf5f5" layoutX="75.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NETCREEPER" wrappingWidth="251.1480712890625">
+         <font>
+            <Font name="Baskerville Old Face" size="38.0" />
+         </font>
+      </Text>
+      <Text layoutX="76.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Ultimate Network Traffic Tracer">
+         <fill>
+            <LinearGradient endX="0.1882911694200733" endY="1.0" startX="0.7863924050632912" startY="0.012658251991754854">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6013374328613281" green="0.5890188217163086" blue="0.7368420958518982" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="316.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="567.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="V1">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Text>
+      <ProgressBar layoutY="368.0" prefHeight="21.0" prefWidth="600.0" progress="0.72" style="-fx-background-color: #0000;" stylesheets="@Design/styles.css" />
+   </children>
 </AnchorPane>
