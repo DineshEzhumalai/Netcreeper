@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.ProgressBar?>
+
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
@@ -11,10 +11,41 @@
 
 <AnchorPane prefHeight="386.0" prefWidth="600.0" styleClass="splash-screen" stylesheets="@Design/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.netcreeper.Splashscreen">
    <children>
-      <Text fill="#fdf5f5" layoutX="75.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NETCREEPER" wrappingWidth="251.1480712890625">
+      <Text layoutX="75.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NETCREEPER" wrappingWidth="251.1480712890625">
          <font>
             <Font name="Baskerville Old Face" size="38.0" />
          </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.19239373601789708">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7897091722595079">
+                     <color>
+                        <Color red="0.7368420958518982" green="0.7141000628471375" blue="0.7141000628471375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.904471544715447">
+                     <color>
+                        <Color red="0.9912280440330505" green="0.9392191767692566" blue="0.9392191767692566" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9912280440330505" green="0.9392191767692566" blue="0.9392191767692566" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
       </Text>
       <Text layoutX="76.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Ultimate Network Traffic Tracer">
          <fill>
@@ -42,11 +73,11 @@
             <Font name="System Bold" size="40.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="567.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="V1">
+      <Text fill="WHITE" layoutX="576.0" layoutY="19.0" opacity="0.51" strokeType="OUTSIDE" strokeWidth="0.0" text="V1">
          <font>
-            <Font name="Arial Bold" size="16.0" />
+            <Font name="Arial Bold" size="13.0" />
          </font>
       </Text>
-      <ProgressBar layoutY="368.0" prefHeight="21.0" prefWidth="600.0" progress="0.72" style="-fx-background-color: #0000;" stylesheets="@Design/styles.css" />
+
    </children>
 </AnchorPane>
