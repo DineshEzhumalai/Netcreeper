@@ -28,7 +28,7 @@ public class SplashScreenController {
                 for (int i = 1; i <= 100; i++) {
                     // Update the progress property of the Task as the initialization progresses
                     updateProgress(i, 100);
-                    Thread.sleep(10);
+                    Thread.sleep(20);
                 }
                 return null;
             }
