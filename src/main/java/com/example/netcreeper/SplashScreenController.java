@@ -13,12 +13,12 @@ import java.io.IOException;
 public class SplashScreenController {
 
     @FXML
-    private ProgressBar progressBar;
+    private ProgressBar splashprogress;
 
     @FXML
     private void initialize() {
         // Initialize the ProgressBar
-        progressBar.setProgress(0);
+        splashprogress.setProgress(0);
 
         // Bind the progress property of the ProgressBar to the progress of the initialization Task
         Task<Void> initializationTask = new Task<Void>() {
@@ -33,7 +33,7 @@ public class SplashScreenController {
                 return null;
             }
         };
-        progressBar.progressProperty().bind(initializationTask.progressProperty());
+        splashprogress.progressProperty().bind(initializationTask.progressProperty());
 
         // When the Task completes, transition to the main application
         initializationTask.setOnSucceeded(event -> {
@@ -50,7 +50,7 @@ public class SplashScreenController {
 
     private void showMainApplication() throws IOException {
         // Hide the splash screen stage
-        Stage splashScreenStage = (Stage) progressBar.getScene().getWindow();
+        Stage splashScreenStage = (Stage) splashprogress.getScene().getWindow();
         splashScreenStage.hide();
 
         // Create the main application stage
