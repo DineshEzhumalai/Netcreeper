@@ -17,7 +17,7 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("NetCreeper+");
         stage.setScene(scene);
-//      stage.getIcons().add(new Image("file:icon.png"));
+        stage.getIcons().add(new Image("D:\\Java Projects\\Netcreeper\\src\\main\\resources\\com\\example\\netcreeper\\Design\\NetCapture.png"));
         stage.initStyle(StageStyle.UNDECORATED);
         stage.show();
 
